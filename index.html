@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo | login</title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+
+    <!-- tailwind and daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body class="min-h-screen max-w-[430px] bg-base-200 mx-auto">
+    <div class="w-[200px] mx-auto pt-20">
+        <img src="assets/Logo-full.png" alt="">
+    </div>
+
+    <div class="from mt-10 ">
+        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow mx-auto rounded-2xl">
+            <div class="card-body">
+                <fieldset class="fieldset">
+                    <label class="label font-semibold text-black">Mobile Number</label>
+                    <input id="number-input" maxlength="11" minlength="11" type="text" class="input rounded-full bg-base-200" placeholder="Enter Your Mobile Number" />
+                    <label class="label font-semibold text-black">4 Digit Pin</label>
+                    <input id="pin-input" minlength="4" maxlength="4" type="password" class="input rounded-full bg-base-200" placeholder="Enter 4 Digit Pin" />
+                    
+                    <button id="login-btn" class="btn btn-primary mt-4 rounded-full">Login</button>
+                </fieldset>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script/login.js"></script>
+
+</body>
+
+</html>
